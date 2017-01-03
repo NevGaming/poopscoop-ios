@@ -7,14 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E67FEEA1E186A4A008EE768 /* Riddle 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1E67FEE51E186A4A008EE768 /* Riddle 6.m4a */; };
+		1E67FEEB1E186A4A008EE768 /* Riddle 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1E67FEE61E186A4A008EE768 /* Riddle 7.m4a */; };
+		1E67FEEC1E186A4A008EE768 /* Riddle 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1E67FEE71E186A4A008EE768 /* Riddle 8.m4a */; };
+		1E67FEED1E186A4A008EE768 /* Riddle 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1E67FEE81E186A4A008EE768 /* Riddle 9.m4a */; };
+		1E67FEEE1E186A4A008EE768 /* Riddle 10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1E67FEE91E186A4A008EE768 /* Riddle 10.m4a */; };
 		1EE5EAD11E12F5270060B290 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5EAD01E12F5270060B290 /* AppDelegate.swift */; };
 		1EE5EAD31E12F5270060B290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5EAD21E12F5270060B290 /* ViewController.swift */; };
 		1EE5EAD61E12F5270060B290 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAD41E12F5270060B290 /* Main.storyboard */; };
 		1EE5EAD81E12F5270060B290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAD71E12F5270060B290 /* Assets.xcassets */; };
 		1EE5EADB1E12F5270060B290 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAD91E12F5270060B290 /* LaunchScreen.storyboard */; };
+		1EE5EAE31E12FF8B0060B290 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE21E12FF8A0060B290 /* Random.swift */; };
+		1EE5EAED1E1333810060B290 /* Fart 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE41E1333810060B290 /* Fart 7.m4a */; };
+		1EE5EAEE1E1333810060B290 /* Fart 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE51E1333810060B290 /* Fart 8.m4a */; };
+		1EE5EAEF1E1333810060B290 /* Fart 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE61E1333810060B290 /* Fart 9.m4a */; };
+		1EE5EAF01E1333810060B290 /* Fart 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE71E1333810060B290 /* Fart 1.m4a */; };
+		1EE5EAF11E1333810060B290 /* Fart 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE81E1333810060B290 /* Fart 2.m4a */; };
+		1EE5EAF21E1333810060B290 /* Fart 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAE91E1333810060B290 /* Fart 3.m4a */; };
+		1EE5EAF31E1333810060B290 /* Fart 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAEA1E1333810060B290 /* Fart 4.m4a */; };
+		1EE5EAF41E1333810060B290 /* Fart 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAEB1E1333810060B290 /* Fart 5.m4a */; };
+		1EE5EAF51E1333810060B290 /* Fart 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAEC1E1333810060B290 /* Fart 6.m4a */; };
+		1EE5EAF81E13345B0060B290 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE5EAF71E13345B0060B290 /* AVFoundation.framework */; };
+		1EE5EB081E1461250060B290 /* Fart 10.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EAF91E1461250060B290 /* Fart 10.m4a */; };
+		1EE5EB1A1E1461940060B290 /* Fart 11.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB171E1461940060B290 /* Fart 11.m4a */; };
+		1EE5EB1B1E1461940060B290 /* Fart 12.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB181E1461940060B290 /* Fart 12.m4a */; };
+		1EE5EB1C1E1461940060B290 /* Fart 13.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB191E1461940060B290 /* Fart 13.m4a */; };
+		1EE5EB291E146BE20060B290 /* Fart 14.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB1E1E146BE20060B290 /* Fart 14.m4a */; };
+		1EE5EB2A1E146BE20060B290 /* Fart 15.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB1F1E146BE20060B290 /* Fart 15.m4a */; };
+		1EE5EB2B1E146BE20060B290 /* Fart 16.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB201E146BE20060B290 /* Fart 16.m4a */; };
+		1EE5EB2C1E146BE20060B290 /* Fart 17.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB211E146BE20060B290 /* Fart 17.m4a */; };
+		1EE5EB2D1E146BE20060B290 /* Fart 18.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB221E146BE20060B290 /* Fart 18.m4a */; };
+		1EE5EB2E1E146BE20060B290 /* Fart 19.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB231E146BE20060B290 /* Fart 19.m4a */; };
+		1EE5EB2F1E146BE20060B290 /* Fart 20.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB241E146BE20060B290 /* Fart 20.m4a */; };
+		1EE5EB301E146BE20060B290 /* Fart 21.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB251E146BE20060B290 /* Fart 21.m4a */; };
+		1EE5EB311E146BE20060B290 /* Fart 22.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB261E146BE20060B290 /* Fart 22.m4a */; };
+		1EE5EB321E146BE20060B290 /* Fart 23.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB271E146BE20060B290 /* Fart 23.m4a */; };
+		1EE5EB331E146BE20060B290 /* Fart 24.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EB281E146BE20060B290 /* Fart 24.m4a */; };
+		1EE5EBD11E16B2440060B290 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD01E16B2440060B290 /* Logging.swift */; };
+		1EE5EBD51E16CDA30060B290 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD41E16CDA30060B290 /* Audio.swift */; };
+		1EE5EBDB1E16D6580060B290 /* Riddle 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD61E16D6580060B290 /* Riddle 1.m4a */; };
+		1EE5EBDC1E16D6580060B290 /* Riddle 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD71E16D6580060B290 /* Riddle 2.m4a */; };
+		1EE5EBDD1E16D6580060B290 /* Riddle 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD81E16D6580060B290 /* Riddle 3.m4a */; };
+		1EE5EBDE1E16D6580060B290 /* Riddle 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EBD91E16D6580060B290 /* Riddle 4.m4a */; };
+		1EE5EBDF1E16D6580060B290 /* Riddle 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1EE5EBDA1E16D6580060B290 /* Riddle 5.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E67FEE51E186A4A008EE768 /* Riddle 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 6.m4a"; sourceTree = "<group>"; };
+		1E67FEE61E186A4A008EE768 /* Riddle 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 7.m4a"; sourceTree = "<group>"; };
+		1E67FEE71E186A4A008EE768 /* Riddle 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 8.m4a"; sourceTree = "<group>"; };
+		1E67FEE81E186A4A008EE768 /* Riddle 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 9.m4a"; sourceTree = "<group>"; };
+		1E67FEE91E186A4A008EE768 /* Riddle 10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 10.m4a"; sourceTree = "<group>"; };
 		1EE5EACD1E12F5270060B290 /* Poop Scoop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poop Scoop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EE5EAD01E12F5270060B290 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EE5EAD21E12F5270060B290 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +65,39 @@
 		1EE5EAD71E12F5270060B290 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EE5EADA1E12F5270060B290 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EE5EADC1E12F5270060B290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EE5EAE21E12FF8A0060B290 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		1EE5EAE41E1333810060B290 /* Fart 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 7.m4a"; sourceTree = "<group>"; };
+		1EE5EAE51E1333810060B290 /* Fart 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 8.m4a"; sourceTree = "<group>"; };
+		1EE5EAE61E1333810060B290 /* Fart 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 9.m4a"; sourceTree = "<group>"; };
+		1EE5EAE71E1333810060B290 /* Fart 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 1.m4a"; sourceTree = "<group>"; };
+		1EE5EAE81E1333810060B290 /* Fart 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 2.m4a"; sourceTree = "<group>"; };
+		1EE5EAE91E1333810060B290 /* Fart 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 3.m4a"; sourceTree = "<group>"; };
+		1EE5EAEA1E1333810060B290 /* Fart 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 4.m4a"; sourceTree = "<group>"; };
+		1EE5EAEB1E1333810060B290 /* Fart 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 5.m4a"; sourceTree = "<group>"; };
+		1EE5EAEC1E1333810060B290 /* Fart 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 6.m4a"; sourceTree = "<group>"; };
+		1EE5EAF71E13345B0060B290 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1EE5EAF91E1461250060B290 /* Fart 10.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 10.m4a"; sourceTree = "<group>"; };
+		1EE5EB171E1461940060B290 /* Fart 11.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 11.m4a"; sourceTree = "<group>"; };
+		1EE5EB181E1461940060B290 /* Fart 12.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 12.m4a"; sourceTree = "<group>"; };
+		1EE5EB191E1461940060B290 /* Fart 13.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 13.m4a"; sourceTree = "<group>"; };
+		1EE5EB1E1E146BE20060B290 /* Fart 14.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 14.m4a"; sourceTree = "<group>"; };
+		1EE5EB1F1E146BE20060B290 /* Fart 15.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 15.m4a"; sourceTree = "<group>"; };
+		1EE5EB201E146BE20060B290 /* Fart 16.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 16.m4a"; sourceTree = "<group>"; };
+		1EE5EB211E146BE20060B290 /* Fart 17.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 17.m4a"; sourceTree = "<group>"; };
+		1EE5EB221E146BE20060B290 /* Fart 18.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 18.m4a"; sourceTree = "<group>"; };
+		1EE5EB231E146BE20060B290 /* Fart 19.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 19.m4a"; sourceTree = "<group>"; };
+		1EE5EB241E146BE20060B290 /* Fart 20.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 20.m4a"; sourceTree = "<group>"; };
+		1EE5EB251E146BE20060B290 /* Fart 21.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 21.m4a"; sourceTree = "<group>"; };
+		1EE5EB261E146BE20060B290 /* Fart 22.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 22.m4a"; sourceTree = "<group>"; };
+		1EE5EB271E146BE20060B290 /* Fart 23.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 23.m4a"; sourceTree = "<group>"; };
+		1EE5EB281E146BE20060B290 /* Fart 24.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fart 24.m4a"; sourceTree = "<group>"; };
+		1EE5EBD01E16B2440060B290 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		1EE5EBD41E16CDA30060B290 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		1EE5EBD61E16D6580060B290 /* Riddle 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 1.m4a"; sourceTree = "<group>"; };
+		1EE5EBD71E16D6580060B290 /* Riddle 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 2.m4a"; sourceTree = "<group>"; };
+		1EE5EBD81E16D6580060B290 /* Riddle 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 3.m4a"; sourceTree = "<group>"; };
+		1EE5EBD91E16D6580060B290 /* Riddle 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 4.m4a"; sourceTree = "<group>"; };
+		1EE5EBDA1E16D6580060B290 /* Riddle 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Riddle 5.m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE5EAF81E13345B0060B290 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +117,7 @@
 			children = (
 				1EE5EACF1E12F5270060B290 /* Poop Scoop */,
 				1EE5EACE1E12F5270060B290 /* Products */,
+				1EE5EAF61E13345B0060B290 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +132,75 @@
 		1EE5EACF1E12F5270060B290 /* Poop Scoop */ = {
 			isa = PBXGroup;
 			children = (
+				1EE5EAE21E12FF8A0060B290 /* Random.swift */,
+				1EE5EBD41E16CDA30060B290 /* Audio.swift */,
+				1EE5EBD01E16B2440060B290 /* Logging.swift */,
 				1EE5EAD01E12F5270060B290 /* AppDelegate.swift */,
 				1EE5EAD21E12F5270060B290 /* ViewController.swift */,
-				1EE5EAD41E12F5270060B290 /* Main.storyboard */,
 				1EE5EAD71E12F5270060B290 /* Assets.xcassets */,
-				1EE5EAD91E12F5270060B290 /* LaunchScreen.storyboard */,
 				1EE5EADC1E12F5270060B290 /* Info.plist */,
+				1EE5EBCF1E16B0980060B290 /* Storyboards */,
+				1EE5EB1D1E1463970060B290 /* Sounds */,
 			);
 			path = "Poop Scoop";
+			sourceTree = "<group>";
+		};
+		1EE5EAF61E13345B0060B290 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EE5EAF71E13345B0060B290 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EE5EB1D1E1463970060B290 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1EE5EAE71E1333810060B290 /* Fart 1.m4a */,
+				1EE5EAE81E1333810060B290 /* Fart 2.m4a */,
+				1EE5EAE91E1333810060B290 /* Fart 3.m4a */,
+				1EE5EAEA1E1333810060B290 /* Fart 4.m4a */,
+				1EE5EAEB1E1333810060B290 /* Fart 5.m4a */,
+				1EE5EAEC1E1333810060B290 /* Fart 6.m4a */,
+				1EE5EAE41E1333810060B290 /* Fart 7.m4a */,
+				1EE5EAE51E1333810060B290 /* Fart 8.m4a */,
+				1EE5EAE61E1333810060B290 /* Fart 9.m4a */,
+				1EE5EAF91E1461250060B290 /* Fart 10.m4a */,
+				1EE5EB171E1461940060B290 /* Fart 11.m4a */,
+				1EE5EB181E1461940060B290 /* Fart 12.m4a */,
+				1EE5EB191E1461940060B290 /* Fart 13.m4a */,
+				1EE5EB1E1E146BE20060B290 /* Fart 14.m4a */,
+				1EE5EB1F1E146BE20060B290 /* Fart 15.m4a */,
+				1EE5EB201E146BE20060B290 /* Fart 16.m4a */,
+				1EE5EB211E146BE20060B290 /* Fart 17.m4a */,
+				1EE5EB221E146BE20060B290 /* Fart 18.m4a */,
+				1EE5EB231E146BE20060B290 /* Fart 19.m4a */,
+				1EE5EB241E146BE20060B290 /* Fart 20.m4a */,
+				1EE5EB251E146BE20060B290 /* Fart 21.m4a */,
+				1EE5EB261E146BE20060B290 /* Fart 22.m4a */,
+				1EE5EB271E146BE20060B290 /* Fart 23.m4a */,
+				1EE5EB281E146BE20060B290 /* Fart 24.m4a */,
+				1EE5EBD61E16D6580060B290 /* Riddle 1.m4a */,
+				1EE5EBD71E16D6580060B290 /* Riddle 2.m4a */,
+				1EE5EBD81E16D6580060B290 /* Riddle 3.m4a */,
+				1EE5EBD91E16D6580060B290 /* Riddle 4.m4a */,
+				1EE5EBDA1E16D6580060B290 /* Riddle 5.m4a */,
+				1E67FEE51E186A4A008EE768 /* Riddle 6.m4a */,
+				1E67FEE61E186A4A008EE768 /* Riddle 7.m4a */,
+				1E67FEE71E186A4A008EE768 /* Riddle 8.m4a */,
+				1E67FEE81E186A4A008EE768 /* Riddle 9.m4a */,
+				1E67FEE91E186A4A008EE768 /* Riddle 10.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		1EE5EBCF1E16B0980060B290 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1EE5EAD41E12F5270060B290 /* Main.storyboard */,
+				1EE5EAD91E12F5270060B290 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +235,7 @@
 				TargetAttributes = {
 					1EE5EACC1E12F5270060B290 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9Z544VH6DA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,9 +263,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE5EB1A1E1461940060B290 /* Fart 11.m4a in Resources */,
+				1E67FEEC1E186A4A008EE768 /* Riddle 8.m4a in Resources */,
+				1EE5EBDD1E16D6580060B290 /* Riddle 3.m4a in Resources */,
+				1E67FEEE1E186A4A008EE768 /* Riddle 10.m4a in Resources */,
+				1EE5EBDB1E16D6580060B290 /* Riddle 1.m4a in Resources */,
 				1EE5EADB1E12F5270060B290 /* LaunchScreen.storyboard in Resources */,
+				1EE5EB2A1E146BE20060B290 /* Fart 15.m4a in Resources */,
+				1EE5EBDF1E16D6580060B290 /* Riddle 5.m4a in Resources */,
+				1EE5EAF31E1333810060B290 /* Fart 4.m4a in Resources */,
+				1E67FEEB1E186A4A008EE768 /* Riddle 7.m4a in Resources */,
+				1EE5EAF11E1333810060B290 /* Fart 2.m4a in Resources */,
+				1EE5EAF41E1333810060B290 /* Fart 5.m4a in Resources */,
+				1EE5EAEE1E1333810060B290 /* Fart 8.m4a in Resources */,
+				1EE5EBDC1E16D6580060B290 /* Riddle 2.m4a in Resources */,
+				1E67FEED1E186A4A008EE768 /* Riddle 9.m4a in Resources */,
+				1EE5EAF51E1333810060B290 /* Fart 6.m4a in Resources */,
+				1EE5EAEF1E1333810060B290 /* Fart 9.m4a in Resources */,
+				1EE5EBDE1E16D6580060B290 /* Riddle 4.m4a in Resources */,
+				1EE5EB311E146BE20060B290 /* Fart 22.m4a in Resources */,
+				1EE5EB2F1E146BE20060B290 /* Fart 20.m4a in Resources */,
+				1E67FEEA1E186A4A008EE768 /* Riddle 6.m4a in Resources */,
+				1EE5EAF01E1333810060B290 /* Fart 1.m4a in Resources */,
+				1EE5EB301E146BE20060B290 /* Fart 21.m4a in Resources */,
+				1EE5EB2E1E146BE20060B290 /* Fart 19.m4a in Resources */,
+				1EE5EB081E1461250060B290 /* Fart 10.m4a in Resources */,
+				1EE5EB2B1E146BE20060B290 /* Fart 16.m4a in Resources */,
 				1EE5EAD81E12F5270060B290 /* Assets.xcassets in Resources */,
+				1EE5EB331E146BE20060B290 /* Fart 24.m4a in Resources */,
+				1EE5EB291E146BE20060B290 /* Fart 14.m4a in Resources */,
+				1EE5EB2D1E146BE20060B290 /* Fart 18.m4a in Resources */,
+				1EE5EB1B1E1461940060B290 /* Fart 12.m4a in Resources */,
+				1EE5EB1C1E1461940060B290 /* Fart 13.m4a in Resources */,
+				1EE5EB321E146BE20060B290 /* Fart 23.m4a in Resources */,
+				1EE5EB2C1E146BE20060B290 /* Fart 17.m4a in Resources */,
+				1EE5EAED1E1333810060B290 /* Fart 7.m4a in Resources */,
 				1EE5EAD61E12F5270060B290 /* Main.storyboard in Resources */,
+				1EE5EAF21E1333810060B290 /* Fart 3.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +312,9 @@
 			files = (
 				1EE5EAD31E12F5270060B290 /* ViewController.swift in Sources */,
 				1EE5EAD11E12F5270060B290 /* AppDelegate.swift in Sources */,
+				1EE5EAE31E12FF8B0060B290 /* Random.swift in Sources */,
+				1EE5EBD11E16B2440060B290 /* Logging.swift in Sources */,
+				1EE5EBD51E16CDA30060B290 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +437,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Z544VH6DA;
 				INFOPLIST_FILE = "Poop Scoop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "SN.Poop-Scoop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -272,7 +452,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Z544VH6DA;
 				INFOPLIST_FILE = "Poop Scoop/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "SN.Poop-Scoop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +481,7 @@
 				1EE5EAE11E12F5270060B290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
