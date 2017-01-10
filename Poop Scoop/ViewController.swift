@@ -14,15 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var riddle: UILabel!
     
-    private var poops: [UILabel] = []
-    private var farts: [AVAudioPlayer?] = []
-    
-    private var riddles: [AVAudioPlayer?] = []
+    fileprivate var poops: [UILabel] = []
+    fileprivate var farts: [AVAudioPlayer?] = []
+    fileprivate var riddles: [AVAudioPlayer?] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        riddle.isHidden = true
+        hideRiddle()
         
         activityIndicator.startAnimating()
         DispatchQueue.global(qos: .userInitiated).async {
@@ -34,7 +33,7 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+
     private func initializeFarts() {
         for num in 1...25 {
             if let player = Audio.buildAudioPlayer(forResource: "Fart \(num)", ofType: "m4a") {
@@ -57,50 +56,56 @@ class ViewController: UIViewController {
         tap.numberOfTapsRequired = 1
         self.backgroundView.addGestureRecognizer(tap)
         
-        // Listen for user double-taps with two finger, to remove all poop
+        // Listen for user double-taps with two fingers, to remove all poop
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(removeAllPoops))
         doubleTap.numberOfTapsRequired = 2
         doubleTap.numberOfTouchesRequired = 2
         self.backgroundView.addGestureRecognizer(doubleTap)
         
+        // Listen for user triple-taps with two fingers, to remove all poos and show riddle
         let tripleTap = UITapGestureRecognizer(target: self, action: #selector(showRiddle))
         tripleTap.numberOfTapsRequired = 3
         tripleTap.numberOfTouchesRequired = 2
         self.backgroundView.addGestureRecognizer(tripleTap)
     }
+}
+
+extension ViewController {
     
-    @objc private func showRiddle() {
-        riddle.isHidden = false
-        playRandomRiddle()
-        removeAllPoops()
-    }
-    
-    @objc private func backgroundTapped(sender: UITapGestureRecognizer) {
+    @objc fileprivate func backgroundTapped(sender: UITapGestureRecognizer) {
+        hideRiddle()
         playRandomFart()
         addRandomPoop(atLocation: sender.location(ofTouch: 0, in: backgroundView))
         changeRandomBackgroundColor()
     }
     
+    @objc fileprivate func removeAllPoops() {
+        poops.forEach { $0.removeFromSuperview() }
+        poops.removeAll()
+    }
+    
+    @objc fileprivate func showRiddle() {
+        riddle.isHidden = false
+
+        playRandomRiddle()
+        removeAllPoops()
+    }
+    
+    fileprivate func hideRiddle() {
+        riddle.isHidden  = true
+    }
+
     private func playRandomFart() {
-        playRandomSound(inCollection: farts)
+        farts.random()?.play()
     }
     
     private func playRandomRiddle() {
-        playRandomSound(inCollection: riddles)
-    }
-    
-    private func playRandomSound(inCollection collection: [AVAudioPlayer?]) {
-        let index = Int(arc4random_uniform(UInt32(collection.count)))
-        let sound = collection[index]
-        sound?.play()
+        riddles.random()?.play()
     }
     
     private func addRandomPoop(atLocation location: CGPoint) {
-        // hide the riddle if already shown
-        riddle.isHidden  = true
-        
         // Creates a random sized poop placed where the user tapped
-        let poop = UILabel.randomSizedPoop
+        let poop = UILabel.randomPoop()
         poop.frame.origin = CGPoint(
             x: location.x - poop.frame.size.width / 2,
             y: location.y - poop.frame.size.height / 2
@@ -109,6 +114,7 @@ class ViewController: UIViewController {
         poops.append(poop)
         
         // Animates the poop in a bouncy way, repeats forever
+        let scale: CGFloat = 1 + Random.float() / 2
         UIView.animate(
             withDuration: 0.35,
             delay: 0,
@@ -116,25 +122,15 @@ class ViewController: UIViewController {
             initialSpringVelocity: 0.8,
             options: [.autoreverse, .repeat],
             animations: {
-                poop.layer.transform = CATransform3DScale(poop.layer.transform, 1.3, 1.3, 1.3)
+                poop.layer.transform = CATransform3DScale(poop.layer.transform, scale, scale, scale)
         }, completion: nil)
-
-    }
-    
-    @objc private func removeAllPoops() {
-        poops.forEach { $0.removeFromSuperview() }
-        poops.removeAll()
     }
     
     private func changeRandomBackgroundColor() {
         // Animates changing the background color to a random color
+        let randomColor = UIColor.random()
         UIView.animate(withDuration: 0.15) {
-            self.backgroundView.layer.backgroundColor = UIColor.random.cgColor
+            self.backgroundView.layer.backgroundColor = randomColor.cgColor
         }
     }
 }
-
-
-
-
-
