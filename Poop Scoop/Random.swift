@@ -7,32 +7,45 @@
 //
 
 import UIKit
+import Foundation
 
-class Random {
-    class func int() -> Int {
+extension Int {
+    static func random() -> Int {
         return Int(arc4random())
     }
     
-    class func int(between minValue: UInt, and maxValue: UInt) -> Int {
-        return Int(max(minValue, UInt(arc4random_uniform(UInt32(maxValue)))))
+    static func random(lower: UInt, upper: UInt) -> Int {
+        return Int(UInt.random(lower: lower, upper: upper))
     }
-    
-    class func double() -> Double {
+}
+
+extension UInt {
+    static func random(lower: UInt, upper: UInt) -> UInt {
+        return UInt(arc4random_uniform(UInt32(upper - lower)) + UInt32(lower))
+    }
+}
+
+extension Double {
+    static func random() -> Double {
         return drand48()
     }
-    
-    class func float() -> Float {
-        return Float(double())
-    }
+}
 
-    class func float() -> CGFloat {
-        return CGFloat(double())
+extension Float {
+    static func random() -> Float {
+        return Float(Double.random())
+    }
+}
+
+extension CGFloat {
+    static func random() -> CGFloat {
+        return CGFloat(Double.random())
     }
 }
 
 extension Array {
-    var randomIndex: Int {
-        return Random.int(between: 0, and: UInt(self.count))
+    private var randomIndex: Int {
+        return Int.random(lower: 0, upper: UInt(self.count))
     }
     
     func random() -> Element {
@@ -43,9 +56,9 @@ extension Array {
 extension UIColor {
     class func random() -> UIColor {
         return UIColor(
-            red: Random.float(),
-            green: Random.float(),
-            blue: Random.float(),
+            red: CGFloat.random(),
+            green: CGFloat.random(),
+            blue: CGFloat.random(),
             alpha: 1.0
         )
     }
@@ -54,7 +67,7 @@ extension UIColor {
 extension UILabel {
     class func randomPoop() -> UILabel {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: CGFloat(Random.int(between: 19, and: 90)))
+        label.font = UIFont.systemFont(ofSize: CGFloat(Int.random(lower: 19, upper: 90)))
         label.text = "💩"
         label.sizeToFit()
         return label

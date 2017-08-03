@@ -15,39 +15,38 @@ class ViewController: UIViewController {
     @IBOutlet weak var riddle: UILabel!
     
     fileprivate var poops: [UILabel] = []
-    fileprivate var farts: [AVAudioPlayer?] = []
-    fileprivate var riddles: [AVAudioPlayer?] = []
-    
+    fileprivate var farts: [AVAudioPlayer] = []
+    fileprivate var riddles: [AVAudioPlayer] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hideRiddle()
         
-        activityIndicator.startAnimating()
+        startLoadingAnimations()
         DispatchQueue.global(qos: .userInitiated).async {
             self.initializeFarts()
             self.initializeRiddles()
             self.addGestureRecognizers()
             DispatchQueue.main.async {
-                self.activityIndicator.stopAnimating()
+                self.stopLoadingAnimations()
             }
         }
     }
 
+    deinit {
+        farts.forEach { $0.stop() }
+        riddles.forEach { $0.stop() }
+    }
+    
     private func initializeFarts() {
-        for num in 1...25 {
-            if let player = Audio.buildAudioPlayer(forResource: "Fart \(num)", ofType: "m4a") {
-                farts.append(player)
-            }
-        }
+        let fartFileNames = (1...25).map { "Fart \($0)" }
+        farts = Array<AVAudioPlayer>(forResources: fartFileNames, ofType: "m4a")
     }
     
     private func initializeRiddles() {
-        for num in 1...11 {
-            if let riddle = Audio.buildAudioPlayer(forResource: "Riddle \(num)", ofType: "m4a") {
-                riddles.append(riddle)
-            }
-        }
+        let fileNames = (1...11).map { "Riddle \($0)" }
+        riddles = Array<AVAudioPlayer>(forResources: fileNames, ofType: "m4a")
     }
     
     private func addGestureRecognizers() {
@@ -67,6 +66,22 @@ class ViewController: UIViewController {
         tripleTap.numberOfTapsRequired = 3
         tripleTap.numberOfTouchesRequired = 2
         self.backgroundView.addGestureRecognizer(tripleTap)
+    }
+    
+    private func startLoadingAnimations() {
+        activityIndicator.startAnimating()
+        UIView.animate(
+            withDuration: 0.2,
+            delay: 0,
+            options: [UIViewAnimationOptions.allowUserInteraction, UIViewAnimationOptions.repeat, UIViewAnimationOptions.autoreverse],
+            animations: {
+                self.backgroundView.layer.backgroundColor = UIColor.random().cgColor
+        })
+    }
+    
+    private func stopLoadingAnimations() {
+        activityIndicator.stopAnimating()
+        self.backgroundView.layer.removeAllAnimations()
     }
 }
 
@@ -96,11 +111,11 @@ extension ViewController {
     }
 
     private func playRandomFart() {
-        farts.random()?.play()
+        farts.random().play()
     }
     
     private func playRandomRiddle() {
-        riddles.random()?.play()
+        riddles.random().play()
     }
     
     private func addRandomPoop(atLocation location: CGPoint) {
@@ -114,7 +129,7 @@ extension ViewController {
         poops.append(poop)
         
         // Animates the poop in a bouncy way, repeats forever
-        let scale: CGFloat = 1 + Random.float() / 2
+        let scale = 1 + CGFloat.random() / 2
         UIView.animate(
             withDuration: 0.35,
             delay: 0,
@@ -128,9 +143,12 @@ extension ViewController {
     
     private func changeRandomBackgroundColor() {
         // Animates changing the background color to a random color
-        let randomColor = UIColor.random()
-        UIView.animate(withDuration: 0.15) {
-            self.backgroundView.layer.backgroundColor = randomColor.cgColor
-        }
+        UIView.animate(
+            withDuration: 0.15,
+            delay: 0,
+            options: [UIViewAnimationOptions.allowUserInteraction],
+            animations: {
+            self.backgroundView.layer.backgroundColor = UIColor.random().cgColor
+        })
     }
 }

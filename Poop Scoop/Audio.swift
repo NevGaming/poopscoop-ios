@@ -8,19 +8,28 @@
 
 import AVFoundation
 
-class Audio {
-    class func buildAudioPlayer(forResource resource: String, ofType type: String) -> AVAudioPlayer? {
-        if let soundFile = Bundle.main.path(forResource: resource, ofType: type) {
-            do {
-                let audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundFile))
-                audioPlayer.prepareToPlay()
-                Logging.debug("Loaded \(soundFile)")
-                return audioPlayer
-            }
-            catch {
-                Logging.error("Could not find sound file \(soundFile)")
+extension AVAudioPlayer {
+    convenience init?(forResource resource: String, ofType type: String) {
+        guard let soundFile = Bundle.main.path(forResource: resource, ofType: type) else { return nil }
+        do {
+            try self.init(contentsOf: URL(fileURLWithPath: soundFile))
+            prepareToPlay()
+            Logging.debug("Loaded \(soundFile)")
+        }
+        catch {
+            Logging.error("Could not find sound file \(soundFile)")
+            return nil
+        }
+    }
+}
+
+extension Array where Element == AVAudioPlayer {
+    init(forResources resources: [String], ofType type: String) {
+        self.init()
+        for resource in resources {
+            if let player = AVAudioPlayer(forResource: resource, ofType: type) {
+                self.append(player)
             }
         }
-        return nil
     }
 }
